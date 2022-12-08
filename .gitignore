@@ -1,6 +1,9 @@
 # Practice exercises
 practice 
 
+# Backend ignore
+space-finder-backend/node_modules/
+
 # Logs
 logs
 *.log
