@@ -4,6 +4,9 @@ practice
 # Backend ignore
 space-finder-backend/node_modules/
 
+# Frontend ignore
+space-finder-frontend/node_modules/
+
 # Logs
 logs
 *.log
