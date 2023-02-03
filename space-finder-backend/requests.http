@@ -1,0 +1,37 @@
+@endpoint = https://73w0u3m0ja.execute-api.eu-central-1.amazonaws.com/prod
+@token = eyJraWQiOiJIc3lmWGV4U2xoZW9TajBEZjcza0QwQ1pSTVNUWUxKWWlGQklSajZWdCtJPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI2ZDAyYmZmOC1mMDMzLTQzZTktYWJiZC0zMWQxZTg5NmRhMGMiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmV1LWNlbnRyYWwtMS5hbWF6b25hd3MuY29tXC9ldS1jZW50cmFsLTFfeEh2WllEOGpZIiwiY29nbml0bzp1c2VybmFtZSI6Im1ncmVpbmVyNzkiLCJvcmlnaW5fanRpIjoiNjhlMmQ4MzEtODJjZS00ZjA3LTgxNDAtYmEzNzkzOTI3YTE4IiwiYXVkIjoiNnZvcnF1Y24xMnA5ZnIwbWZpZ29lamthNm8iLCJldmVudF9pZCI6IjIzMjVjZWUwLTlmOTktNGExZi05NDA0LWJiNzU1MGUxYTA4NSIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjc0NzE5NDE1LCJleHAiOjE2NzQ3MjMwMTUsImlhdCI6MTY3NDcxOTQxNSwianRpIjoiOGYxNTI3NjUtZmVkNy00N2YwLWJiNGMtZWE5YTlkNDJkMDY0IiwiZW1haWwiOiJtZ3JlaW5lcjc5QGdtYWlsLmNvbSJ9.ufi-dVKj46HZ0zjPk5SrHqCqunlplR5fJEoNZwS6XBC1kOzB973v3FyiZmFKrh4F5eaA1y9yPREgDHJjhGzk74jI-Bmxn4WYZi6wNSWKchTr3hgfYKpfC1gGoBx3tIsgmnJHFC_9v1bjAw3X_Ru9rBras-ZwD_sziJkLRmztUO_1Lc2dGTEA8ud0PlgcXBvt2UU0ZuFCSl0EbFCHgKfFoZO9O7H73Phc_HTnHAbgc-6-sebkXMWaec8HT7onO7dkYr5Ti2Rww90vP1Ozlsi3haXqepCIAgKJrKM70b01ioaU08S45xRm0KHAXVwNLYZTmWtoji9koJXeTtv696JGRA
+
+GET {{endpoint}}/hello/
+Authorization: {{token}}
+###
+
+
+GET {{endpoint}}/spaces/
+###
+
+GET {{endpoint}}/spaces?spaceId=14daebc7-1379-4de2-9539-1788bec8d0aa
+###
+
+GET {{endpoint}}/spaces?location=London
+###
+
+POST {{endpoint}}/spaces/
+Content-Type: application/json
+
+{ 
+    "location": "Pittsburgh",
+    "name": "Happy New Year"
+}
+###
+
+PUT {{endpoint}}/spaces?spaceId=14daebc7-1379-4de2-9539-1788bec8d0aa
+Content-Type: application/json
+
+{ 
+    "location": "London",
+    "name": "Best location"
+}
+###
+
+DELETE {{endpoint}}/spaces?spaceId=096a7e9e-cf75-4f75-b35b-cdbd0ff817d7
+###
